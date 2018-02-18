@@ -33,11 +33,11 @@ boowa
 <br />
 
 **Table of Contents**
-- [Themes](#Themes)
-- [Features](#Features)
-- [Quick Start](#Quick Start)
-- [Why my name is boowa](#Why my name is boowa)
-- [API](#API)
+- [Themes](#themes)
+- [Features](#features)
+- [Quick Start](#quick-start)
+- [Why my name is boowa](#why-my-name-is-boowa)
+- [API](#api)
 
 ## Themes
 Let's see some boowa blogs first, will add more themes later:
@@ -97,7 +97,7 @@ so, boowa
 Generate a new blog app in a empty directory
 
 ### app structure
-<img src="https://github.com/boowajs/boowa/blob/master/pics/structure.png"/ width="150px">
+<img src="https://github.com/boowajs/boowa/blob/master/pics/structure.png" width="150px">
 
 Actually a choo app yeah~, but you only need to handle markdown files and `_config.json`
 
