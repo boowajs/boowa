@@ -1,0 +1,59 @@
+@import '../../styles/global.scss';
+@import '../../styles/function.scss';
+
+.boowa-article{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    color: #4e4848;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  > header {
+    h1 {
+      text-align: center;
+      line-height: rem(24);
+      font-size: rem(32);
+      margin-top: rem(42);
+      margin-bottom: rem(48);
+      -webkit-text-stroke: rem(0.4);
+    }
+
+    .gray{
+      color: gray;
+    }
+  }
+
+  span{
+    font-size: 0.9rem;
+  }
+
+  .reading-time{
+    float: right;
+  }
+
+  .article{
+    margin-top: rem(40);
+    color: #4e4848;
+    a{
+      border: none;
+    }
+
+    ul{
+      li{
+        margin-bottom: rem(5);
+      }
+    }
+
+    code{
+      transform: none;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora|Cousine');
+@import '../styles/function.scss';
+
+:host{
+  -webkit-padding-start: 0;
+  list-style: none;
+  font-family: Cousine, monospace;
+  &.isDark{
+    mark{
+      background-color: #000;
+    }
+  }
+  mark{
+    background-color: #efefef;
+    padding: 0 rem(5);
+  }
+  li{
+    font-size: rem(13);
+    color: #353735;
+    &:before{
+      content: '•';
+      position: absolute;
+    }
+    h2{
+      margin-left: rem(18);
+      margin-bottom: rem(18);
+      font-size: inherit;
+    }
+    ul{
+      -webkit-padding-start: 0;
+      list-style: none;
+      li{
+        margin-left: rem(16);
+        margin-bottom: rem(20);
+        span{
+          margin-left: rem(16);
+        }
+        a{
+          text-decoration: underline;
+          color: inherit;
+        }
+      }
+    }
+  }
+}

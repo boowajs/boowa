@@ -1,0 +1,36 @@
+@import '../../styles/global.scss';
+@import '../../styles/function.scss';
+
+.boowa-article{
+  display: block;
+  width: 70%;
+  font-family: Cousine, monospace;
+  header{
+    margin-bottom: rem(12);
+  }
+  h2{
+    font-size: rem(17);
+    color: #353735;
+  }
+  small{
+    font-size: rem(12);
+    -webkit-font-smoothing: antialiased;
+  }
+  a{
+    text-decoration: underline;
+    color: inherit;
+  }
+  footer{
+    margin-top: rem(16);
+    font-size: rem(14);
+  }
+  pre{
+    background: rgba(0,0,0,0.02) !important;
+  }
+  .language-css .token.string,
+  .style .token.string,
+  .token.operator,
+  .token.url{
+    background: rgba(0,0,0,0) !important;
+  }
+}

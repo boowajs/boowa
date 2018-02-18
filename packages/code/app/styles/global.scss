@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora');
+@import './function.scss';
+
+body{
+  font-family: 'Lora', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100%;
+  margin: 0;
+}
+
+a {
+  color: #41b7d8;
+  text-decoration: none;
+  border-bottom: rem(1) solid rgba(0,0,0,0.1);
+  &:hover{
+    border-bottom: rem(1) solid #41b7d8;
+  }
+}
+
+main{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: rem(16);
+  &.homepage{
+    width: 70%;
+  };
+  &.article{
+    width: 80%;
+  };
+}
+
+pre {
+  position: relative;
+  line-height: 0 !important;
+  border: rem(1) solid;
+  border-left: rem(6) solid;
+  border-top-right-radius: rem(4);
+  border-bottom-right-radius: rem(4);
+  background-color: #f4f4f4 !important;
+  padding-left: rem(16);
+  border-color: rgba(0,0,0,0.1);
+  margin-top: 0 !important;
+
+  code {
+    font-size: rem(15);
+    color: #777 !important;
+    display: block;
+    line-height: 1.5 !important;
+    transform: translateY(rem(-40));
+    animation-duration: 1s;
+    animation-name: fadein;
+
+    .token.operator{
+      background: none !important;
+    }
+  }
+}
+@keyframes fadein{
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}

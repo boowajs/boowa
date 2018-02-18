@@ -1,0 +1,21 @@
+@import '../../styles/function.scss';
+
+.homepage-pre{
+  width: 90%;  
+  margin: 0 auto !important;
+  min-height: 600px;
+  code{
+    margin: rem(30) 0;
+  }
+  .avatar {
+    position: absolute;
+    background-image: url('../../../assets/avatar.png');
+    background-size: contain;
+    right: rem(16);
+    top: rem(16);
+    width: rem(96);
+    height: rem(96);
+    box-shadow: 0 0 rem(5) #aeaeae;
+    transform: rotate(5deg);
+  }
+}

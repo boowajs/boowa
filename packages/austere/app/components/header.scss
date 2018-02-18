@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora|Cousine');
+@import '../styles/function.scss';
+
+:host {
+  margin-bottom: rem(30);
+  a{
+    color: #070c10;
+    font-family: Cousine, monospace;
+    font-weight: bold;
+    font-size: rem(13);
+    &:hover{
+      color: white;
+      background: #000;
+    }
+  }
+  button {
+    padding: 3px 4px;
+    border-radius: 0;
+    border: 1px solid;
+    background: transparent;
+    color: #353735;
+    font-size: rem(11);
+    margin-top: rem(10);
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "boowa",
+  "version": "1.0.3",
+  "description": "☁️☁️🚂☁️☁️ colorful blog generator",
+  "scripts": {
+    "test": "tape test/test.js"
+  },
+  "bin": {
+    "boowa": "bin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhouHansen/boowa.git"
+  },
+  "author": "周汉成",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZhouHansen/boowa/issues"
+  },
+  "homepage": "https://github.com/ZhouHansen/boowa#readme",
+  "dependencies": {
+    "awoo": "^4.0.1",
+    "awoo-layouts": "^1.0.6",
+    "awoo-markdown": "^1.1.1",
+    "awoo-matter": "^1.1.1",
+    "endent": "^1.0.9",
+    "finalhandler": "^1.1.0",
+    "get-installed-path": "^4.0.8",
+    "inquirer": "^4.0.1",
+    "markdown-it-container": "^2.0.0",
+    "markdown-it-prism-zhc": "^1.1.3",
+    "mkdirp": "^0.5.1",
+    "pino": "^4.10.3",
+    "pino-colada": "^1.4.2",
+    "pumpify": "^1.4.0",
+    "serve-static": "^1.13.1"
+  }
+}
