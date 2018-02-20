@@ -116,7 +116,7 @@ Run this command to generate a new markdown file contains the necessary structur
 This file contains metadatas like name, email etc.
 
 ### `boowa build`
-Generate new templates after you edit `_config.json` or modify your markdown files
+After edit `_config.json` or modify markdown files, run this command to generate new templates.
 
 ### `npm run start`
 Start a development server
@@ -131,7 +131,7 @@ Boowa has a simple built-in server , after `npm run build && cd dist`, run this 
 After install the newest boowa, run `boowa` in the boowa-existed directory, this update would not rewrite the markdown files and `_config.json`.
 
 ### support offline locally
-Service-worker normally runs unlocally under https, so if you want to test the offline function, for chrome, run this command first:
+Service-worker works under https in production mode, so if you want to test the offline function locally, for chrome, run this command first:
 ```sh
 /Applications/Google\ Chrome.app/Conts/MacOS/Google\ Chrome --user-data-dir=/tmp/foo --ignore-certificate-errors --unsafely-treat-insecure-origin-as-secure=http://localhost:port
 ```
