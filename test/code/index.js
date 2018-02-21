@@ -1,7 +1,7 @@
-var generateTmpl = require('./generateTmpl')
+var generateArticleListTmpl = require('./generateArticleListTmpl')
 var articleLayout = require('./articleLayout')
 
 module.exports = () => {
-  generateTmpl()
+  generateArticleListTmpl()
   articleLayout()
 }

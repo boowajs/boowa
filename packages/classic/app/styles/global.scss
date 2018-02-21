@@ -1,0 +1,26 @@
+@import './function.scss';
+
+body{
+  font-family: 'Lora', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100%;
+  margin: rem(8) !important;
+  padding: rem(16) rem(31);
+}
+
+body.isDark{
+  background: #000;
+  *{
+    color: #fff !important;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+main{
+  width: 100%;
+  margin-bottom: rem(16);
+}

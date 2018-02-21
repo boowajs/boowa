@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora|Cousine');
+@import '../styles/function.scss';
+
+:host {
+  position: relative;
+  margin-bottom: rem(50);
+  font-family: 'Lato', Georgia, serif;
+  .header-wrap{
+    padding-top: rem(36);
+    display: flex;
+    flex-direction: column;
+    img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: rem(5);
+    }
+    h1{
+      text-align: center;
+    }
+    p{
+      font-size: rem(19);
+      text-align: center;
+      width: 45%;
+      padding-bottom: rem(32);
+      margin-bottom: rem(12);
+      border-bottom: rem(0.5) #eee solid;
+      color: #aeaeae;
+      font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      mark{
+        color: #EB298C;
+        background: none;
+      }
+    }
+    *{
+      margin:rem(5) auto;
+    }
+  }
+  nav{
+    position: absolute;
+    right: 0;
+    a{
+      top: 8px;
+      right: 6px;
+      padding: 8px 12px;
+      color: #5badf0;
+      font-size: 13px;
+      line-height: 1.35;
+      border-radius: 3px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      &.cta{
+        background: #5badf0;
+        color: #fff;
+        margin-left: 12px;
+      }
+    }
+  }
+}

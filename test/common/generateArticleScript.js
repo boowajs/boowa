@@ -2,7 +2,7 @@ var test = require('tape')
 var fs = require('fs')
 var endent = require('endent')
 var site = require('./fixtures/site')
-var generateArticleScript = require('../../lib/generators/generateArticleScript')
+var generateArticleScript = require('../../lib/generateArticleScript')
 
 module.exports = () => {
   test('generateArticleScript', t => {

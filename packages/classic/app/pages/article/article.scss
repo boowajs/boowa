@@ -17,13 +17,22 @@
   }
 
   > header {
-    h1 {
+    h2 {
       text-align: center;
       line-height: rem(24);
       font-size: rem(32);
       margin-top: rem(42);
-      margin-bottom: rem(48);
+      margin-bottom: rem(24);
       -webkit-text-stroke: rem(0.4);
+    }
+
+    small{
+      display: inline-block;
+      font-family: 'Lato', Helvetica, Arial, sans-serif;
+      width: 100%;
+      color: #aeaeae;
+      text-align: center;
+      margin: 0 auto;
     }
 
     .gray{
@@ -64,5 +73,5 @@
   .token.operator,
   .token.url{
     background: rgba(0,0,0,0) !important;
-  }  
+  }
 }

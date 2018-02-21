@@ -2,11 +2,9 @@ var html = require('choo/html')
 var raw = require('choo/html/raw')
 var Nanocomponent = require('nanocomponent')
 var css = require('sheetify')
-var fs = require('fs')
-var header = require('../../components/header')
-var articleList = require('../../components/articleList')
+var articleList = require('../tmpl/articleList.js')
 
-css('./homepage.scss')
+var prefix = css('./articleList.scss')
 
 class Component extends Nanocomponent {
   constructor () {
@@ -15,14 +13,20 @@ class Component extends Nanocomponent {
 
   createElement (state, emit) {
     return html`
-      <div>
-        ${ articleList.render(state, emit) }
-      </div>
+      <ul class='${prefix} ${state.isDark ? "isDark" : ""}'>
+        ${raw(articleList(state))}
+      </ul>
     `
   }
 
   update () {
     return true
+  }
+}
+
+function clickButton (state, emit) {
+  return () => {
+    emit('')
   }
 }
 

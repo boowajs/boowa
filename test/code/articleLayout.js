@@ -1,7 +1,7 @@
 var test = require('tape')
 var endent = require('endent')
 var file = require('./fixtures/file')
-var articleLayout = require('../../lib/generators/code/articleLayout')
+var articleLayout = require('../../lib/code/articleLayout')
 
 module.exports = () => {
   test('code articleLayout', t => {

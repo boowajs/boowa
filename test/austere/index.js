@@ -1,7 +1,7 @@
-var generateTmpl = require('./generateTmpl')
+var generateArticleListTmpl = require('./generateArticleListTmpl')
 var generateHeaderTmpl = require('./generateHeaderTmpl')
 
 module.exports = () => {
-  generateTmpl()
+  generateArticleListTmpl()
   generateHeaderTmpl()
 }

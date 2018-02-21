@@ -41,8 +41,9 @@ boowa
 
 ## Themes
 Let's see some boowa blogs first, will add more themes later:
-- [code_theme](https://boowajs.github.io/code_theme/)
 - [austere_theme](https://boowajs.github.io/austere_theme/)
+- [classic_theme](https://boowajs.github.io/classic_theme/)
+- [code_theme](https://boowajs.github.io/code_theme/)
 
 ## Features
 - __colorful:__  provide kinds of styles to take your fancy
@@ -66,22 +67,11 @@ boowa
 
 3. Select one style from the inquiring list
 
-4. Generate html files from markdown files
-```sh
-boowa build
-```
 
-5. Install the dependencies
-```sh
-npm install
-```
-
-6. Start a development server
+4. Start a development server
 ```sh
 npm run start
 ```
-
-7. then, you will see a complete blog demo
 
 ## Why my name is boowa
 boowa is built with:

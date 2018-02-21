@@ -10,7 +10,7 @@ if (!action) {
   fs.access(`${process.cwd()}/.boowatheme`, err => {
     if (!err) {
       var theme = fs.readFileSync(`${process.cwd()}/.boowatheme`, 'utf8').trim()
-      require(`./lib/generators`)(theme, true)
+      require(`./lib`)(theme, true)
     } else {
       log.info('Press ^C at any time to quit.')
       prompt([{
@@ -18,22 +18,23 @@ if (!action) {
         name: 'theme',
         message: 'choose a blog theme',
         choices: [
+          'classic',
           'code',
           'austere'
         ]
       }]).then(async anwsers => {
-        require(`./lib/generators`)(anwsers.theme)
+        require(`./lib`)(anwsers.theme)
       })
     }
   })
 } else if (action === 'build') {
   var theme = fs.readFileSync(`${process.cwd()}/.boowatheme`, 'utf8').trim()
-  require(`./lib/generators/build.js`)(theme)
+  require(`./lib/build.js`)(theme)
 } else if (action === 'create') {
   var theme = fs.readFileSync(`${process.cwd()}/.boowatheme`, 'utf8').trim()
   var mdName = process.argv[3]
   if (mdName) {
-    require(`./lib/generators/create.js`)(mdName, theme)
+    require(`./lib/create.js`)(mdName, theme)
   } else {
     prompt([{
       type: 'input',
@@ -41,7 +42,7 @@ if (!action) {
       message: 'markdown file name'
     }]).then(async anwsers => {
       log.info('Press ^C at any time to quit.')
-      require(`./lib/generators/create.js`)(anwsers.mdName, theme)
+      require(`./lib/create.js`)(anwsers.mdName, theme)
     })
   }
 } else if (action === 'serve') {

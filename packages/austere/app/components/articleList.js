@@ -2,10 +2,9 @@ var html = require('choo/html')
 var raw = require('choo/html/raw')
 var Nanocomponent = require('nanocomponent')
 var css = require('sheetify')
-var fs = require('fs')
-var nestList = fs.readFileSync('./app/tmpl/homepage.html', 'utf8')
+var articleList = require('../tmpl/articleList.js')
 
-var prefix = css('./nestList.scss')
+var prefix = css('./articleList.scss')
 
 class Component extends Nanocomponent {
   constructor () {
@@ -15,7 +14,7 @@ class Component extends Nanocomponent {
   createElement (state, emit) {
     return html`
       <ul class='${prefix} ${state.isDark ? "isDark" : ""}'>
-        ${raw(nestList)}
+        ${raw(articleList(state))}
         <small>the end.</small>
       </ul>
     `

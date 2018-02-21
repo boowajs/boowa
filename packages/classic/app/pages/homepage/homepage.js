@@ -3,8 +3,7 @@ var raw = require('choo/html/raw')
 var Nanocomponent = require('nanocomponent')
 var css = require('sheetify')
 var fs = require('fs')
-var articleList = require('../../tmpl/articleList.js')
-var header = require('../../tmpl/header.js')
+var articleList = require('../../components/articleList')
 
 css('./homepage.scss')
 
@@ -15,19 +14,15 @@ class Component extends Nanocomponent {
 
   createElement (state, emit) {
     return html`
-      <pre class='language-javascript homepage-pre'>
-        <div class="avatar">
-          ${raw(header(state))}
-        </div>
-        <code class='language-javascript'>
-          ${raw(articleList(state))}
-        </code>
-      </pre>
+      <div>
+        ${ articleList.render(state, emit) }
+      </div>
     `
   }
 
   update () {
-    return false
+    return true
   }
 }
+
 module.exports = new Component()
