@@ -7,28 +7,33 @@ boowa
 
 <div align="center">
   <!-- Stability -->
-  <a href="https://nodejs.org/api/documentation.html#documentation_stability_index">
+  <a href="https://img.shields.io/badge/stability-stable-green.svg?style=flat-square">
     <img src="https://img.shields.io/badge/stability-stable-green.svg?style=flat-square"
       alt="API stability" />
   </a>
 
   <!-- travis ci -->
-  <a href="https://travis-ci.org/boowajs/boowa">
+  <a href="https://img.shields.io/travis/boowajs/boowa.svg?style=flat-square">
     <img src="https://img.shields.io/travis/boowajs/boowa.svg?style=flat-square"
       alt="test status" />
   </a>
 
   <!-- npm version -->
-  <a href="https://npmjs.org/package/boowa">
+  <a href="https://img.shields.io/npm/v/boowa.svg?style=flat-square">
     <img src="https://img.shields.io/npm/v/boowa.svg?style=flat-square"
       alt="npm version" />
   </a>
 
   <!-- code style -->
-  <a href="https://github.com/feross/standard">
+  <a href="https://img.shields.io/badge/code%20style-standard-blue.svg?style=flat-square">
     <img src="https://img.shields.io/badge/code%20style-standard-blue.svg?style=flat-square"
       alt="code style: standard" />
   </a>
+
+  <a href="https://img.shields.io/npm/dm/boowa.svg?style=flat-square">
+    <img src="https://img.shields.io/npm/dm/boowa.svg?style=flat-square"
+      alt="code style: standard" />
+  </a>  
 </div>
 <br />
 

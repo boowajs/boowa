@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+
 var prompt = require('inquirer').createPromptModule()
 var fs = require('fs')
 var version = require('./package.json').version
