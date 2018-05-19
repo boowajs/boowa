@@ -1,10 +1,10 @@
-var html = require('choo/html')
-var raw = require('choo/html/raw')
-var Nanocomponent = require('nanocomponent')
-var css = require('sheetify')
-var header = require('../tmpl/header.js')
+const html = require('choo/html')
+const raw = require('choo/html/raw')
+const Nanocomponent = require('nanocomponent')
+const css = require('sheetify')
+const header = require('../tmpl/header.js')
 
-var prefix = css('./header.scss')
+const prefix = css('./header.scss')
 
 class Component extends Nanocomponent {
   constructor () {

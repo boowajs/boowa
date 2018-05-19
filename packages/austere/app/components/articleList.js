@@ -1,8 +1,8 @@
-var html = require('choo/html')
-var raw = require('choo/html/raw')
-var Nanocomponent = require('nanocomponent')
-var css = require('sheetify')
-var articleList = require('../tmpl/articleList.js')
+const html = require('choo/html')
+const raw = require('choo/html/raw')
+const Nanocomponent = require('nanocomponent')
+const css = require('sheetify')
+const articleList = require('../tmpl/articleList.js')
 
 var prefix = css('./articleList.scss')
 

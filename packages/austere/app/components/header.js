@@ -1,13 +1,13 @@
-var html = require('choo/html')
-var raw = require('choo/html/raw')
-var Nanocomponent = require('nanocomponent')
-var css = require('sheetify')
-var fs = require('fs')
-var header = require('../tmpl/header.js')
+const html = require('choo/html')
+const raw = require('choo/html/raw')
+const Nanocomponent = require('nanocomponent')
+const css = require('sheetify')
+const fs = require('fs')
+const header = require('../tmpl/header.js')
 
-var prefix = css('./header.scss')
-var emojis = ['🐝', '🚂', '👽', '🍅', '🐻', '🎮']
-var emoji =  emojis[Math.floor(Math.random()*emojis.length)]
+const prefix = css('./header.scss')
+const emojis = ['🐝', '🚂', '👽', '🍅', '🐻', '🎮']
+const emoji =  emojis[Math.floor(Math.random()*emojis.length)]
 class Component extends Nanocomponent {
   constructor () {
     super()

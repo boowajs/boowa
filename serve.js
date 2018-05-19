@@ -1,13 +1,12 @@
-var http = require('http')
-var serveStatic = require('serve-static')
-var finalhandler = require('finalhandler')
-var log = require('./log')
+const http = require('http')
+const serveStatic = require('serve-static')
+const finalhandler = require('finalhandler')
+const log = require('./log')
 
-module.exports = (port) => {
-  var port = port || 8080
-  var serve = serveStatic(`${process.cwd()}`)
+module.exports = (port = 8080) => {
+  let serve = serveStatic(`${process.cwd()}`)
 
-  var server = http.createServer(function onRequest (req, res) {
+  let server = http.createServer(function onRequest (req, res) {
     serve(req, res, finalhandler(req, res))
   })
   log.info(`HTTP: http://localhost:${port}`)

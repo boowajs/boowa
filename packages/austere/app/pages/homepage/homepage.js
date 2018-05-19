@@ -1,10 +1,10 @@
-var html = require('choo/html')
-var raw = require('choo/html/raw')
-var Nanocomponent = require('nanocomponent')
-var css = require('sheetify')
-var fs = require('fs')
-var header = require('../../components/header')
-var articleList = require('../../components/articleList')
+const html = require('choo/html')
+const raw = require('choo/html/raw')
+const Nanocomponent = require('nanocomponent')
+const css = require('sheetify')
+const fs = require('fs')
+const header = require('../../components/header')
+const articleList = require('../../components/articleList')
 
 css('./homepage.scss')
 

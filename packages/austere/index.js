@@ -1,9 +1,9 @@
-var css = require('sheetify')
-var choo = require('choo')
-var html = require('choo/html')
-var homePage = require('./app/pages/homepage/homepage')
-var article = require('./app/pages/article/article')
-var header = require('./app/components/header')
+const css = require('sheetify')
+const choo = require('choo')
+const html = require('choo/html')
+const homePage = require('./app/pages/homepage/homepage')
+const article = require('./app/pages/article/article')
+const header = require('./app/components/header')
 
 css('./app/styles/global.scss')
 css('github-markdown-css')
@@ -21,9 +21,9 @@ if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator && nav
 
 const TITLE = 'boowa-blog'
 
-var app = choo()
+const app = choo()
 
-var renderhomepage = (state, emit) => {
+const renderhomepage = (state, emit) => {
   emit(state.events.DOMTITLECHANGE, TITLE)
 
   return html`
@@ -35,7 +35,7 @@ var renderhomepage = (state, emit) => {
     </body>
   `
 }
-var renderarticle = (state, emit) => {
+const renderarticle = (state, emit) => {
   return html`
     <body class='${state.isDark ? "isDark" : ""}'>
       ${ header.render(state, emit) }

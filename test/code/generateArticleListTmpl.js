@@ -8,7 +8,7 @@ module.exports = () => {
     t.plan(1)
 
     t.equal(endent`
-      var endent = require('endent')
+      const endent = require('endent')
 
       module.exports = () => endent\`
         <span class="token comment">
