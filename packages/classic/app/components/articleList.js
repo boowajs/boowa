@@ -7,13 +7,9 @@ const articleList = require('../tmpl/articleList.js')
 const prefix = css('./articleList.scss')
 
 class Component extends Nanocomponent {
-  constructor () {
-    super()
-  }
-
   createElement (state, emit) {
     return html`
-      <ul class='${prefix} ${state.isDark ? "isDark" : ""}'>
+      <ul class='${prefix} ${state.isDark ? 'isDark' : ''}'>
         ${raw(articleList(state))}
       </ul>
     `
@@ -21,12 +17,6 @@ class Component extends Nanocomponent {
 
   update () {
     return true
-  }
-}
-
-function clickButton (state, emit) {
-  return () => {
-    emit('')
   }
 }
 

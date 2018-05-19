@@ -7,10 +7,6 @@ const header = require('../tmpl/header.js')
 const prefix = css('./header.scss')
 
 class Component extends Nanocomponent {
-  constructor () {
-    super()
-  }
-
   createElement (state, emit) {
     return html`
       <header class=${prefix}>
@@ -21,13 +17,6 @@ class Component extends Nanocomponent {
 
   update () {
     return true
-  }
-}
-
-function clickButton (state, emit) {
-  return () => {
-    state.isDark = !state.isDark
-    emit('render')
   }
 }
 

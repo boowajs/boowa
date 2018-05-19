@@ -1,7 +1,7 @@
 module.exports = {
   metadata: {
-    title: "A title",
-    readingTime: "xx min read"
+    title: 'A title',
+    readingTime: 'xx min read'
   },
-  contents: "some contents"
+  contents: 'some contents'
 }

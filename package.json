@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "description": "☁️☁️🚂☁️☁️ colorful blog generator",
   "scripts": {
-    "test": "tape test/test.js"
+    "test": "standard && tape test/test.js"
   },
   "bin": {
     "boowa": "bin.js"
@@ -33,6 +33,7 @@
     "pino": "^4.10.3",
     "pino-colada": "^1.4.2",
     "pumpify": "^1.4.0",
-    "serve-static": "^1.13.1"
+    "serve-static": "^1.13.1",
+    "standard": "^11.0.1"
   }
 }

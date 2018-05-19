@@ -22,14 +22,14 @@ module.exports = () => {
     ]
   }
   var config = {
-    "homepageList": {
-      "Social~*": [
+    'homepageList': {
+      'Social~*': [
         "<mark><a href='https://github.com/ZhouHansen'>Github</a></mark>, <mark><a href='https://user.qzone.qq.com/308114274/main'>qq</a></mark>",
-        "Email is <mark>z308114274@gmail.com</mark>"
+        'Email is <mark>z308114274@gmail.com</mark>'
       ],
-      "Fun facts": [
-        "From China Anhui",
-        "fan of stendhal"
+      'Fun facts': [
+        'From China Anhui',
+        'fan of stendhal'
       ]
     }
   }

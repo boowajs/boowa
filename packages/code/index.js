@@ -28,7 +28,7 @@ const renderhomepage = (state, emit) => {
   return html`
     <body>
       <main class='homepage'>
-        ${ homePage.render(state, emit) }
+        ${homePage.render(state, emit)}
       </main>
     </body>
   `
@@ -37,7 +37,7 @@ const renderarticle = (state, emit) => {
   return html`
     <body>
       <main class='article'>
-        ${ article.render(state, emit) }
+        ${article.render(state, emit)}
       </main>
     </body>
   `

@@ -2,17 +2,12 @@ const html = require('choo/html')
 const raw = require('choo/html/raw')
 const Nanocomponent = require('nanocomponent')
 const css = require('sheetify')
-const fs = require('fs')
 const articleList = require('../../tmpl/articleList.js')
 const header = require('../../tmpl/header.js')
 
 css('./homepage.scss')
 
 class Component extends Nanocomponent {
-  constructor () {
-    super()
-  }
-
   createElement (state, emit) {
     return html`
       <pre class='language-javascript homepage-pre'>

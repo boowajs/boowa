@@ -2,7 +2,6 @@
 
 const prompt = require('inquirer').createPromptModule()
 const fs = require('fs')
-const version = require('./package.json').version
 const serve = require('./serve')
 const log = require('./log')
 const action = process.argv[2]

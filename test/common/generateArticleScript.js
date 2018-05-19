@@ -1,5 +1,4 @@
 var test = require('tape')
-var fs = require('fs')
 var endent = require('endent')
 var site = require('./fixtures/site')
 var generateArticleScript = require('../../lib/generateArticleScript')
@@ -34,7 +33,7 @@ module.exports = () => {
 
           return html\`
             <article class='boowa-article'>
-              ${'${raw(eval(article))}'}
+              ${'${' + 'raw(eval(article))' + '}'}
             </article>
           \`
         }

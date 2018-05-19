@@ -27,10 +27,10 @@ const renderhomepage = (state, emit) => {
   emit(state.events.DOMTITLECHANGE, TITLE)
   state.isArticle = false
   return html`
-    <body class='${state.isDark ? "isDark" : ""}'>
-      ${ header.render(state, emit) }
+    <body class='${state.isDark ? 'isDark' : ''}'>
+      ${header.render(state, emit)}
       <main class='homepage'>
-        ${ homePage.render(state, emit) }
+        ${homePage.render(state, emit)}
       </main>
     </body>
   `
@@ -38,10 +38,10 @@ const renderhomepage = (state, emit) => {
 const renderarticle = (state, emit) => {
   state.isArticle = true
   return html`
-    <body class='${state.isDark ? "isDark" : ""}'>
-      ${ header.render(state, emit) }
+    <body class='${state.isDark ? 'isDark' : ''}'>
+      ${header.render(state, emit)}
       <main class='article'>
-        ${ article.render(state, emit) }
+        ${article.render(state, emit)}
       </main>
     </body>
   `
