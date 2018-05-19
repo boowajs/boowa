@@ -1,5 +1,5 @@
 var html = require('choo/html')
-var Nanocomponent = require('nanocomponent')
+var Nanocomponent = require('choo/component')
 var css = require('sheetify')
 var articleList = require('../../components/articleList')
 

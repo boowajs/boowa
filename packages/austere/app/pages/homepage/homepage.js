@@ -1,5 +1,5 @@
 const html = require('choo/html')
-const Nanocomponent = require('nanocomponent')
+const Nanocomponent = require('choo/component')
 const css = require('sheetify')
 const articleList = require('../../components/articleList')
 

@@ -9,7 +9,7 @@ module.exports = () => {
     t.equal(endent`
       var html = require('choo/html')
       var raw = require('choo/html/raw')
-      var Nanocomponent = require('nanocomponent')
+      var Nanocomponent = require('choo/component')
       var css = require('sheetify')
       var fs = require('fs')
 
