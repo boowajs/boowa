@@ -9,16 +9,6 @@ css('./app/styles/global.scss')
 css('github-markdown-css')
 css('prismjs')
 
-if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator && navigator.onLine) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('service-worker.js').then(registration => {
-      console.log('ServiceWorker registration successful with scope: ', registration.scope)
-    }).catch(err => {
-      console.log('ServiceWorker registration failed: ', err)
-    })
-  })
-}
-
 const TITLE = 'boowa-blog'
 
 const app = choo()
@@ -46,6 +36,10 @@ const renderarticle = (state, emit) => {
   `
 }
 
+if (process.env.NODE_ENV !== 'production') {
+  app.use(require('choo-service-worker/clear')())
+}
+app.use(require('choo-service-worker')())
 app.route('/', renderhomepage)
 app.route('/articles/:article', renderarticle)
 app.mount('body')
