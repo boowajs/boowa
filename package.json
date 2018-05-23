@@ -1,6 +1,6 @@
 {
   "name": "boowa",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "☁️☁️🚂☁️☁️ colorful blog generator",
   "scripts": {
     "test": "standard && tape test/test.js"
